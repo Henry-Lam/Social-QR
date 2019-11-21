@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebackground4"
+    tools:context=".UserHome">
+
+
+    <Button
+        android:id="@+id/btnQRCamera"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:height="100dp"
+        android:background="@drawable/roundedgebutton"
+        android:fontFamily="@font/cantora_one"
+        android:text="QR Camera"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnQRThumbnail" />
+
+    <Button
+        android:id="@+id/btnMyInfo"
+        android:layout_width="0dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:height="100dp"
+        android:background="@drawable/roundedgebutton"
+        android:fontFamily="@font/cantora_one"
+        android:text="My Info"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnFriends"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnQRCamera" />
+
+    <Button
+        android:id="@+id/btnFriends"
+        android:layout_width="0dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:height="100dp"
+        android:background="@drawable/roundedgebutton"
+        android:fontFamily="@font/cantora_one"
+        android:shadowColor="#59D55E"
+        android:text="Friends"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnMyInfo"
+        app:layout_constraintTop_toBottomOf="@+id/btnQRCamera" />
+
+    <ImageView
+        android:id="@+id/btnQRThumbnail"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileName" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="206dp"
+        android:fontFamily="@font/cantora_one"
+        android:text="Click to Add Name"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/noprofilepic"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
