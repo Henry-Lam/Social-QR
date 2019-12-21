@@ -281,7 +281,7 @@ public class UserHome extends AppCompatActivity {
         userDataBaseRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if (dataSnapshot.child("name").getValue() == null){
+                if (dataSnapshot.child("name").getValue() == null || dataSnapshot.child("name").getValue().toString().isEmpty()){
                     alertCreateName();
                 }else{
                     profileName.setText(dataSnapshot.child("name").getValue().toString());

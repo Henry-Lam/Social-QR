@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/greengradient2"
     tools:context=".QRScannerActivity">
+
 
     <SurfaceView
         android:id="@+id/surfaceView"
@@ -22,24 +24,27 @@
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="85dp"
+        android:width="189dp"
+        android:height="105dp"
         android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/surfaceView" />
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="174dp"
-        android:layout_marginTop="113dp"
+        android:layout_marginTop="46dp"
         android:layout_marginEnd="178dp"
-        android:layout_marginBottom="211dp"
-        android:text="TextView"
+        android:text="Scan a User's QR Code"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/surfaceView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

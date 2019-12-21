@@ -24,6 +24,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/btnQRThumbnail" />
 
     <Button
@@ -52,6 +53,7 @@
         android:height="100dp"
         android:background="@drawable/roundedgebutton"
         android:fontFamily="@font/cantora_one"
+        android:gravity="center|center_vertical"
         android:shadowColor="#59D55E"
         android:text="Friends"
         android:textSize="25sp"
